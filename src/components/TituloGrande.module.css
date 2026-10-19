@@ -1,0 +1,4 @@
+.grande {
+  font-size: clamp(32px, 5vw, 64px);
+  font-weight: 400;
+}

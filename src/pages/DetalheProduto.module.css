@@ -1,0 +1,43 @@
+.detalhe {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 48px;
+}
+
+.detalhe > img {
+  width: 380px;
+  padding: 24px;
+  background: var(--card-suave);
+  border-radius: 24px;
+}
+
+.info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  min-width: 280px;
+}
+
+.info h1 {
+  font-weight: 400;
+}
+
+.info p {
+  font-family: Arial, sans-serif;
+}
+
+.info label,
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.preco {
+  font-size: 32px;
+  font-weight: 400;
+}

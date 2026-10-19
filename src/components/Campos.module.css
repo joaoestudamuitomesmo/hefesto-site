@@ -1,0 +1,13 @@
+.campo {
+  padding: 14px 16px;
+  background: var(--card);
+  color: var(--texto);
+  border: 1px solid transparent;
+  border-radius: 12px;
+  font-family: Arial, sans-serif;
+}
+
+.campo:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.5);
+}

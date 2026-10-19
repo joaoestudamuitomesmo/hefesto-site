@@ -1,0 +1,156 @@
+.texto {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  max-width: 1000px;
+}
+
+/* ---------- intro ---------- */
+.intro h1 {
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 28px;
+}
+
+.intro p {
+  max-width: 760px;
+  padding-left: 24px;
+  border-left: 3px solid rgba(255, 255, 255, 0.4);
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* ---------- títulos de seção ---------- */
+.titulo {
+  margin-bottom: 32px;
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 400;
+}
+
+/* ---------- cards (valores e materiais) ---------- */
+.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.materiais {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 28px;
+  background: var(--card-suave);
+  border-radius: 24px;
+  transition: 200ms ease-in-out all;
+}
+
+.card:hover {
+  background: var(--card);
+  transform: translateY(-4px);
+}
+
+.card h3 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.card p {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+.numero {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  color: var(--fundo);
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+.tag {
+  padding: 2px 12px;
+  background: var(--card);
+  border-radius: 50px;
+  font-size: 11px;
+}
+
+/* ---------- passos ---------- */
+.passos {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+  counter-reset: passo;
+}
+
+.passos li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 20px;
+  row-gap: 4px;
+  align-items: center;
+  padding: 20px 24px;
+  background: var(--card-suave);
+  border-radius: 16px;
+  counter-increment: passo;
+  transition: 200ms ease-in-out all;
+}
+
+.passos li:hover {
+  background: var(--card);
+}
+
+.passos li::before {
+  content: counter(passo);
+  display: grid;
+  grid-row: span 2;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  color: var(--fundo);
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+.passos strong {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.passos span {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+@media (max-width: 600px) {
+  .texto {
+    gap: 56px;
+  }
+
+  .intro p {
+    font-size: 16px;
+  }
+
+  .passos li {
+    padding: 16px 18px;
+  }
+}

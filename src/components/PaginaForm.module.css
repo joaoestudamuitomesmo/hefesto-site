@@ -1,0 +1,8 @@
+.pagina {
+  max-width: 640px;
+}
+
+.pagina > p {
+  margin-bottom: 24px;
+  font-family: Arial, sans-serif;
+}

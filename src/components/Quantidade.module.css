@@ -1,0 +1,15 @@
+.qtd {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.qtd button {
+  width: 36px;
+  height: 36px;
+  background: var(--card);
+  color: var(--texto);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}

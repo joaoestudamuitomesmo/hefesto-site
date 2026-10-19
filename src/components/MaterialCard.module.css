@@ -1,0 +1,43 @@
+.material {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 24px;
+  background: var(--card-suave);
+  border-radius: 16px;
+  transition: 200ms ease-in-out all;
+}
+
+.material:hover {
+  background: var(--card);
+  transform: scale(1.1) translateY(-5px);
+}
+
+.material h3 {
+  font-weight: 400;
+}
+
+.material p {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.tag {
+  padding: 2px 12px;
+  background: var(--card);
+  border-radius: 50px;
+  font-size: 11px;
+}
+
+.cores {
+  display: flex;
+  gap: 6px;
+}
+
+.cores i {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
