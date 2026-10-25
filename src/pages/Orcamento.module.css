@@ -7,3 +7,11 @@
   border-radius: 16px;
   font-size: 14px;
 }
+
+.rotulo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}

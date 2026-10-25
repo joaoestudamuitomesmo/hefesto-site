@@ -1,0 +1,47 @@
+.resumo {
+  padding: 20px 24px;
+  background: var(--card-suave);
+  border-radius: 16px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.resumo h3 {
+  margin-bottom: 8px;
+  font-family: 'Krona One', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.dims,
+.aviso {
+  margin-top: 8px;
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.linhas {
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.linhas li,
+.total {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 6px 0;
+}
+
+.total {
+  margin-top: 8px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.total strong {
+  font-family: 'Krona One', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}

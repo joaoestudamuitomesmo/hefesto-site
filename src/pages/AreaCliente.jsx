@@ -1,5 +1,5 @@
 import { Link, Navigate, useNavigate } from 'react-router-dom'
-import { getUsuario, listarPedidos, sairUsuario } from '../storage'
+import { formatarPreco, getUsuario, listarPedidos, sairUsuario } from '../storage'
 import PaginaForm from '../components/PaginaForm'
 import ItemLista from '../components/ItemLista'
 import Botao from '../components/Botao'
@@ -38,6 +38,7 @@ export default function AreaCliente() {
           <div>
             <h3>Solicitação #{p.id}</h3>
             <p>{p.servico} · {p.material} · {p.cor} · {p.quantidade} un.</p>
+            {p.estimativa && <p>Estimativa: {formatarPreco(p.estimativa.total)}</p>}
           </div>
           <span className={styles.status}>{p.status}</span>
         </ItemLista>
