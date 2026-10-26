@@ -141,8 +141,8 @@ export default function Orcamento() {
         </label>
 
         <label className={styles.upload}>
-          .STL/.OBJ/.STEP
-          <Input name="arquivo" type="file" accept=".stl,.obj,.step,.stp" onChange={aoEscolherArquivo} required />
+          .STL/.OBJ
+          <Input name="arquivo" type="file" accept=".stl,.obj" onChange={aoEscolherArquivo} required />
         </label>
         <Textarea name="mensagem" rows="5" placeholder="Mensagem" />
 
